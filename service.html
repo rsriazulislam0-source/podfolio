@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Page</title>
+    <link rel="icon" href="./service photos/hostel.webp">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <style>
+    
+header {
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(248, 246, 246);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    background:rgb(20, 13, 1); 
+}
+
+header.active {
+    background-image: linear-gradient(to right, #97ff77 0%, #7a9bff 0%, #f47fff 21%, #25daa6d2 52%, #46b2cd 78%, #e71616 100%);
+    box-shadow: rgba(200, 53, 53, 0.4) 0px 5px, rgba(94, 10, 197, 0.829) 0px 10px, rgba(150, 211, 9, 0.774) 0px 15px, rgba(240, 46, 169, 0.728) 0px 20px, rgba(8, 66, 226, 0.05) 0px 25px;
+}
+
+.logo {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0px 30px;
+    color: rgb(245, 245, 245);
+}
+
+.logo i{
+   color: #e00707;
+}
+
+.navbar{
+   background: rgba(245, 222, 179, 0.354);
+   padding: 12px 30px;
+   border-radius: 150px;
+}
+.navbar a{
+    margin: 0 10px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: cursive;
+    padding: 8px 12px;
+}
+
+.navbar a:hover{
+    background: greenyellow;
+    border-radius: 100%;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    transition: 1.0s;
+
+}
+
+button{
+   margin:  0px 30px;
+}
+.auth-buttons button {
+    font-family: monospace;
+    font-size: 24px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.auth-buttons button:hover{
+    background: #000000;
+    border: 2px solid white;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 1px, rgb(31, 193, 27) 0px 0px 0px 3px, rgb(255, 217, 19) 0px 0px 0px 5px, rgb(255, 156, 85) 0px 0px 0px 7px, rgb(255, 85, 85) 0px 0px 0px 9px;
+    transition: 1.0s;
+}
+       /*-- Service Section*/
+.service{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 10px;
+}
+
+.service-text{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+  .service-text h2{
+    color: rgb(35, 53, 222);
+    text-align: center;
+    margin-top: 20px;
+  }
+   .service-text p{
+    padding: 10px;
+    text-align-last: center;
+    font-size: 16px;
+    font-family: monospace;
+    margin-bottom: 20px;
+   }
+/*e-commarce Service*/
+.my-e-commarce-service{
+    background-image: linear-gradient(to top, #50dfb2 0%, #103a81c4 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+
+.my-e-commarce-service img{
+    width: 340px;
+    height: 240px;
+    border-radius: 10px;
+    margin-top: 2.2em;
+}
+
+.my-e-commarce-service i{
+    color: yellow;
+    font-size: 3em;
+    padding: 10px 8px;
+}
+
+.my-e-commarce-service h3{
+    font-size: 40px;
+    font-family: cursive;
+}
+
+.my-e-commarce-service p{
+    display: block;
+    background: #9a3bda;
+    color: rgb(243, 234, 234);
+    font-weight: 600;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.my-e-commarce-service:hover{
+   box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+   transition: 0.5s;
+}
+
+/*my-hostel-service*/
+.my-hostel-service{
+    background-image: linear-gradient(to top, #e4f564 0%, #e13f65c4 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.my-hostel-service img{
+    width: 340px;
+    height: 240px;
+    border-radius: 10px;
+    margin-top: 2.2em;
+}
+
+
+.my-hostel-service i{
+    color: rgb(37, 205, 235);
+    font-size: 3em;
+    padding: 10px 8px;
+}
+
+.my-hostel-service h3{
+    font-size: 40px;
+    font-family: cursive;
+}
+.my-hostel-service p{
+    display: block;
+    background: #c0da3b;
+    color: rgb(175, 31, 31);
+    font-weight: 600;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.my-hostel-service:hover{
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+    transition: 0.5s;
+}
+
+/*my-madrashah-service*/
+.my-madrashah-service{
+     background-image: linear-gradient(to top, #eb2727c9 0%, #9a3bda 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.my-madrashah-service img{
+    width: 340px;
+    height: 240px;
+    border-radius: 10px;
+    margin-top: 2.2em;
+}
+
+
+.my-madrashah-service i{
+    color: rgb(235, 158, 43);
+    font-size: 3em;
+    padding: 10px 8px;
+}
+
+.my-madrashah-service h3{
+    font-size: 40px;
+    font-family: cursive;
+}
+
+.my-madrashah-service p{
+    display: block;
+    background: #22e1db;
+    color: rgb(238, 7, 7);
+    font-weight: 600;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.my-madrashah-service:hover{
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+    transition: 0.5s;
+}
+/*my-resturant-service*/
+.my-resturant-service{
+    background-image: linear-gradient(to top, #34f40e 0%, #ed1648 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.my-resturant-service img{
+    width: 340px;
+    height: 240px;
+    border-radius: 10px;
+    margin-top: 2.2em;
+}
+
+
+.my-resturant-service i{
+    color: rgb(26, 225, 8);
+    font-size: 3em;
+    padding: 10px 8px;
+}
+
+.my-resturant-service h3{
+    font-size: 40px;
+    font-family: cursive;
+}
+
+.my-resturant-service p{
+    display: block;
+    background: #000d0d;
+    color: rgb(227, 95, 95);
+    font-weight: 600;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.my-resturant-service:hover{
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+    transition: 0.5s;
+}
+/*my-medical-service*/
+.my-medical-service{
+    background-image: linear-gradient(to top, #34a4b0c9 0%, #0b0112 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.my-medical-service img{
+    width: 340px;
+    height: 240px;
+    border-radius: 10px;
+    margin-top: 2.2em;
+}
+
+
+.my-medical-service i{
+    color: rgb(59, 43, 235);
+    font-size: 3em;
+    padding: 10px 8px;
+}
+
+.my-medical-service h3{
+    font-size: 40px;
+    font-family: cursive;
+}
+
+.my-medical-service p{
+    display: block;
+    background: #525303;
+    color: rgb(244, 240, 240);
+    font-weight: 600;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.my-medical-service:hover{
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+    transition: 0.5s;
+}
+/*my-scholl-service*/
+.my-scholl-service{
+    background-image: linear-gradient(to top, #070005 0%, #fcf8fe84 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.my-scholl-service img{
+    width: 340px;
+    height: 240px;
+    border-radius: 10px;
+    margin-top: 2.2em;
+}
+
+
+.my-scholl-service i{
+    color: rgb(20, 13, 1);
+    font-size: 3em;
+    padding: 10px 8px;
+}
+
+.my-scholl-service h3{
+    font-size: 40px;
+    font-family: cursive;
+}
+ p{
+    display: block;
+    background: #f9fdfd;
+    color: rgb(8, 0, 0);
+    font-weight: 600;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.my-scholl-service:hover{
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+    transition: 0.5s;
+}
+
+    </style>
+ <header id="mainHeader">
+        <div class="logo">R<i class="bi bi-chat-heart-fill"></i>S</div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="auth-buttons">
+            <button>Login</button>
+            <button>Sign Up</button>
+        </div>
+    </header>
+     <section class="service-text">
+    <h2>This is My Service</h2>
+    <p>My work is consistently creative, clean, and professional. I focus on modern design, attention to detail, and delivering results that satisfy clients. Quality and dedication define every project I complete.</p>
+ </section>
+<section class="service">
+    <div class="my-e-commarce-service">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <h3>E-commerce</h3>
+        <img src="./service photos/e-commarce.webp" alt="photo">
+        <p>My Responsive page</p>
+    </div>
+
+     <div class="my-hostel-service">
+        <i class="fa-solid fa-hotel"></i>
+        <h3>Hostel</h3>
+        <img src="./service photos/hostel.webp" alt="photo">
+        <p>My Responsive page</p>
+    </div>
+
+     <div class="my-madrashah-service">
+        <i class="fa-solid fa-building-columns"></i>
+        <h3>Madrashah</h3>
+        <img src="./service photos/madrashah.webp" alt="photo">
+        <p>My Responsive page</p>
+    </div>
+
+     <div class="my-resturant-service">
+        <i class="fa-solid fa-building-columns"></i>
+        <h3>Resturant</h3>
+        <img src="./service photos/resturant.webp" alt="photo">
+        <p>My Responsive page</p>
+    </div>
+
+     <div class="my-medical-service">
+        <i class="fa-solid fa-book-medical"></i>
+        <h3>Medical</h3>
+        <img src="./service photos/medical.webp" alt="photo">
+        <p>My Responsive page</p>
+    </div>
+
+     <div class="my-scholl-service">
+        <i class="fa-solid fa-school"></i>
+        <h3>Scholl</h3>
+        <img src="./service photos/scholl.jpg" alt="photo">
+        <p>My Responsive page</p>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,91 @@
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .navbar a {
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  .auth-buttons {
+    margin-top: 10px;
+  }
+
+  .auth-buttons button {
+    font-size: 18px;
+    padding: 8px 14px;
+  }
+
+  /* Hero section */
+  .hero {
+    padding: 20px;
+    height: auto;
+  }
+
+  .my-self h1 {
+    font-size: 26px;
+  }
+
+  .my-self p {
+    font-size: 16px;
+  }
+
+  /* Project section */
+  .project {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project .left img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project .right {
+    grid-template-columns: 1fr;
+  }
+
+  .project .right img {
+    width: 220px;
+    height: 160px;
+  }
+
+  /* Contact section */
+  .contact-us {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact img {
+    width: 90%;
+    height: auto;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .main-contact h3 {
+    font-size: 2em;
+  }
+
+  footer p {
+    font-size: 14px;
+    padding: 20px;
+  }
+}
